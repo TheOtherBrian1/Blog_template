@@ -1,0 +1,81 @@
+:root{
+    --title-font: Lora;
+    --content-font: Ubuntu, Arial;
+    /*colors*/
+        --nav-background: #F8F8F8;
+        --dark-blue: #143774;
+        --light-blue: #1792D2;
+        --nav-dark-grey: #717171;
+        --dark-grey: #707070;
+        --border-light-grey: #EBEBEB;
+        --footer-blue: #143774;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2, h6{
+    color: var(--dark-blue);
+    font-family:var(--title-font);
+    padding: 0;
+    margin: .3em 0 0 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/*NAV-----------------------------*/
+nav.top{
+    text-align: center;
+    padding: 0 4rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-background);
+}
+.nav-title-container{
+
+}
+nav.home-title{
+    font-size: 2rem;
+}
+ul.nav-items-container{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    font-family: var(--font2);
+    color: var(--nav-dark-grey);
+    margin: 0;
+}
+li.nav-item{
+    margin: .2em;
+}
+h6.home-subtitle{
+    font-size: .75rem;
+    color: var(--light-blue);
+}
+/*Cards--------------------------------*/
+.img_figure{
+
+}
+.img{
+
+}
+.figcaption{
+
+}
+.article-text-container{
+
+}
+h2.section-title{
+
+}
+
+p.section-intro{
+
+}
+a.read-more{
+    
+}
