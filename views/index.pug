@@ -1,0 +1,20 @@
+doctype html
+html(lang="en-us")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(type="text/css" ref="stylesheet" href = "main.css")
+    body
+        include _mixins.pug
+        +nav(nav)
+        main.posts
+            for arguments in cards
+                +article_card(arguments)
+            .aside-container
+                aside.about-me
+                    +aside_content(aside_about)
+            .recent-articles
+                h2.recent-articles-title
+                    | Recent Articles
+                .aside-articles-container
+                    for arguments in aside_articles
+                        +aside_content(arguments)

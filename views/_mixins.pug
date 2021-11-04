@@ -1,0 +1,33 @@
+mixin nav(nav)
+	nav.top
+		.home
+			h1.home-title
+				| #{nav.title}
+			ul.nav-items-container
+				for item in nav.items
+					li.nav-item
+						| #{item}
+		h6.home-subtitle
+			| #{nav.subtitle}
+
+mixin article_card(cards)
+	article.article_class
+		figure(class= cards.classes.img_figure)
+			img(class = cards.classes.img src = cards.img.src alt = cards.img.alt)
+			figcaption(class= cards.classes.figcaption)
+				| #{cards.img.cmmnt_num} comments | #{cards.img.date}
+		.article-text
+			h2.section-title
+				| #{cards.txt.title}
+			p.section-intro
+				| <strong>#{cards.txt.starting_clause}</strong>. #{cards.txt.body}
+			a.read-more(href="#")
+				| CONTINUE READING
+						
+mixin aside_content(asides)
+	.aside-content-container
+		img.aside-img(src = asides.img.src alt = asides.img.alt )
+		h2.aside-title
+			| #{asides.txt.title}
+		p.about-me-text
+			| #{asides.txt.body}
