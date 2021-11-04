@@ -1,14 +1,16 @@
 mixin nav(nav)
-	nav.top
-		.nav-title-container
-			h1.home-title
-				| #{nav.title}
-			h6.home-subtitle
-				| #{nav.subtitle}
-		ul.nav-items-container
-			for item in nav.items
-				li.nav-item
-					| #{item}
+	nav
+		.top
+			.nav-title-container
+				h1.home-title
+					| #{nav.title}
+				h6.home-subtitle
+					| #{nav.subtitle}
+			ul.nav-items-container
+				for item in nav.items
+					li.nav-item
+						a(href="#")
+							| #{item}
 
 
 mixin article_card(cards)
@@ -16,7 +18,7 @@ mixin article_card(cards)
 		figure(class= cards.classes.img_figure)
 			.img-container
 				img(class = cards.classes.img src = cards.img.src alt = cards.img.alt)
-			figcaption(class= cards.classes.figcaption)
+			figcaption
 				| #{cards.img.cmmnt_num} comments | #{cards.img.date}
 		.article-text-container
 			h2.section-title

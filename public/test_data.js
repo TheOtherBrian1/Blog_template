@@ -9,10 +9,10 @@ const cards = [
 		classes: {
 			is_header: true,
             img_figure: 'img_figure',
-			img: "img",
-			figcaption: "White Desk by 'Bench Accounting' from Unsplash"
+			img: "img"
 		}, 
 		img: {
+			figcaption: "White Desk by 'Bench Accounting' from Unsplash",
 			src: "\\imgs\\bench-accounting-nvzvOPQW0gc-unsplash.jpg", 
 			alt: "Time Passing", 
 			cmmt_num: "3", 

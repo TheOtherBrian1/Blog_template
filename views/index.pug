@@ -9,19 +9,20 @@ html(lang="en-us")
         include _mixins.pug
         +nav(nav)
         main.posts
-            for arguments in cards
-                +article_card(arguments)
-                if arguments.is_header 
-                    hr.divide_header
+            .content-container
+                for arguments in cards
+                    +article_card(arguments)
+                    if arguments.is_header 
+                        hr.divide_header
             .aside-container
                 aside.about-me
                     +aside_content(aside_about)
-            .recent-articles
-                h2.recent-articles-title
-                    | Recent Articles
-                .aside-articles-container
-                    for arguments in aside_articles
-                        +aside_content(arguments)
+                .recent-articles
+                    h2.recent-articles-title
+                        | Recent Articles
+                    .aside-articles-container
+                        for arguments in aside_articles
+                            +aside_content(arguments)
         footer 
             h3.footer-h3
                 | Living Simple For a Better Life 
