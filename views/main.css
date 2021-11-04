@@ -1,3 +1,21 @@
+@font-face {
+    font-family: Lora;
+    src: url('public\\fonts\\Lora\\static\\Lora-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Lora;
+    src: url('public\fonts\Lora\static\Lora-Regular.ttf');
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('public\\fonts\\Ubuntu\\Ubuntu-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('public\\fonts\\Ubuntu\\Ubuntu-Regular.ttf');
+}
 :root{
     --title-font: Lora;
     --content-font: Ubuntu, Arial;
@@ -13,11 +31,14 @@
 *{
     box-sizing: border-box;
 }
-h1, h2, h6{
+h1,h2, h6{
     color: var(--dark-blue);
     font-family:var(--title-font);
     padding: 0;
     margin: .3em 0 0 0;
+}
+p{
+    font-family: var(--content-font);
 }
 body{
     padding: 0;
@@ -40,14 +61,15 @@ nav.home-title{
     font-size: 2rem;
 }
 ul.nav-items-container{
+    padding: 0;
     display: flex;
     list-style: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     align-items: space-around;
-    font-family: var(--font2);
     color: var(--nav-dark-grey);
-    margin: 0;
+    margin: auto;
 }
 li.nav-item{
     margin: .2em;
@@ -57,25 +79,113 @@ h6.home-subtitle{
     color: var(--light-blue);
 }
 /*Cards--------------------------------*/
+.article_class{
+    padding: 1rem;
+}
+hr.divide_header{
+    height: 3px;
+    margin: .2rem;
+    color: var(--border-light-grey);
+}
+.img-container{
+}
 .img_figure{
-
+    margin: 0;
 }
 .img{
-
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 .figcaption{
-
+    text-align: center;
+    color: var(--dark-grey);
 }
 .article-text-container{
-
+    display: flex;
+    flex-direction: column;
 }
 h2.section-title{
-
+    font-size: 1.5rem;
 }
 
 p.section-intro{
-
+    font-size: 1.1rem;
+    color: var(--dark-grey);
 }
 a.read-more{
-    
+    font-size: .9rem;
+    color: var(--light-blue);
+}
+
+/*Asides--------------------------------*/
+.aside-container{
+    width: 100%;
+}
+aside.about-me{
+    margin-bottom: .1rem;
+    border: solid 1.25rem var(--border-light-grey);
+}
+.aside-content-container .aside-img{
+    object-position: left 75%;
+
+}
+.aside-content-container{
+    padding: .2rem;
+    border-bottom: solid .25rem var(--border-light-grey);
+}
+aside.about-me .aside-img{
+    object-position: center top;
+}
+
+.aside-img{
+    width: 100%;
+    max-height: 15rem;
+    object-fit: cover;
+    margin-bottom: 1px;
+}
+h2.aside-title{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+}
+.txt-container{
+    padding: 0 .3rem;
+}
+p.about-me-text{
+    margin: 0 0 .5em 0;
+}
+.recent-articles{
+
+}
+h2.recent-articles-title{
+    margin-left: 1.25rem;
+    margin-bottom: .25rem;
+}
+.aside-articles-container{
+    border: solid 1.25rem var(--border-light-grey);
+}
+
+/*footer------------------------------------*/
+footer{
+    min-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--footer-blue);
+}
+.footer-h4, .footer-h3{
+    font-family: var(--content-font);
+}
+.footer-h4{
+    margin: 0;
+    color: rgb(223, 222, 228);
+    font-size: .75rem;
+}
+
+.footer-h3{
+    margin: .5rem;
+    color:lightblue;
 }

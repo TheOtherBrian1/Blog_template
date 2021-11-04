@@ -14,7 +14,8 @@ mixin nav(nav)
 mixin article_card(cards)
 	article.article_class
 		figure(class= cards.classes.img_figure)
-			img(class = cards.classes.img src = cards.img.src alt = cards.img.alt)
+			.img-container
+				img(class = cards.classes.img src = cards.img.src alt = cards.img.alt)
 			figcaption(class= cards.classes.figcaption)
 				| #{cards.img.cmmnt_num} comments | #{cards.img.date}
 		.article-text-container
@@ -28,7 +29,9 @@ mixin article_card(cards)
 mixin aside_content(asides)
 	.aside-content-container
 		img.aside-img(src = asides.img.src alt = asides.img.alt )
-		h2.aside-title
-			| #{asides.txt.title}
-		p.about-me-text
-			| #{asides.txt.body}
+		.txt-container
+			h2.aside-title
+				| #{asides.txt.title}
+			if asides.txt.body
+				p.about-me-text
+					| #{asides.txt.body}

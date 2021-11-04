@@ -7,6 +7,7 @@ const nav = {
 const cards = [
 	{
 		classes: {
+			is_header: true,
             img_figure: 'img_figure',
 			img: "img",
 			figcaption: "White Desk by 'Bench Accounting' from Unsplash"

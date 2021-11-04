@@ -11,6 +11,8 @@ html(lang="en-us")
         main.posts
             for arguments in cards
                 +article_card(arguments)
+                if arguments.is_header 
+                    hr.divide_header
             .aside-container
                 aside.about-me
                     +aside_content(aside_about)
@@ -20,3 +22,8 @@ html(lang="en-us")
                 .aside-articles-container
                     for arguments in aside_articles
                         +aside_content(arguments)
+        footer 
+            h3.footer-h3
+                | Living Simple For a Better Life 
+            h4.footer-h4
+                | Copyright 2020
