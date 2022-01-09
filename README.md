@@ -1,6 +1,4 @@
 # Blog_template
 A simple template for a blog
 <hr />
-<video> 
-    <source src = "https://www.loom.com/share/10a0ba54ee26463490c744e25db1aa03" />
-</video>
+<img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e89f560a4eca4d46b6b88d264607f0ce-1641692151670-with-play.gif"> 
