@@ -4,7 +4,7 @@ A simple, responsive template for a blog
 <img src = "Readme-assets/full-website.gif" />
 
 <hr />
-<h3>Technologies used<h3>
+<h3>Technologies used</h3>
 <ul>
     <li>
         Pug
@@ -33,7 +33,8 @@ A simple, responsive template for a blog
     </li>
     <li>
         The default port is 2000. Type the following URL into your web browser: "http://localhost:2000"
-    <li>
+    </li>
 </ul>
 <hr />
+<h3> Modifying the template </h3>
 <p>To modify the template's data modify JSON data located in the public folder. If you want to modify the template's structure, modify the .pug files in the view folder.</p>
