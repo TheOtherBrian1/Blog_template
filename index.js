@@ -1,7 +1,7 @@
 const express = require('express');
 const testData = require('./public/test_data');
 const app = express();
-const port = 2000;
+const port = process.env.PORT || 3000
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
