@@ -10,6 +10,6 @@ app.get('/', (req, res) => {
 })
 app.use(express.static('public'));
 
-app.use((err, res, req, next)=>console.log(err));
+app.use((err, res, req, next)=>console.log(err, 'fudge'));
   
 app.listen(port, () => console.log('listening', port));
