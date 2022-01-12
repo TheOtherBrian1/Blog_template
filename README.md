@@ -1,6 +1,8 @@
 # Blog_template
 
 A simple, responsive template for a blog
+<br>
+<a href = "https://blog-template12.herokuapp.com/">Live Site</a>
 <img src = "Readme-assets/full-website.gif" />
 
 <hr />
