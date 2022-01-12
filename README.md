@@ -23,6 +23,9 @@ A simple, responsive template for a blog
     <li>
         Media Queries
     </li>
+    <li>
+        Heroku
+    </li>
 </ul>
 <hr />
 <h3>How to view the template</h3>
